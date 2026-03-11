@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Together Forever</title>
+    <!-- Import Elegant Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body class="surprise-page">
+    
+    <!-- Background sparkles from JS -->
+    <div id="animation-container"></div>
+
+    <main class="mystery-container" id="mystery-box">
+        <button class="mystery-btn" onclick="revealSurprise()">
+            <span class="btn-text">Click for final surprise</span>
+            <span class="btn-icon">🎁</span>
+        </button>
+    </main>
+
+    <main class="surprise-content" id="final-surprise">
+        
+        <h1 class="surprise-heading">To Forever and Always</h1>
+        
+        <!-- Large Marriage Photo with floating emotional appearance -->
+        <div class="marriage-photo-container">
+            <!-- Using an Unsplash placeholder of a wedding/marriage photo -->
+            <img src="https://images.unsplash.com/photo-1534062409054-c918ee9111b1?auto=format&fit=crop&q=80&w=800" alt="Beautiful Marriage Moment">
+        </div>
+        
+        <p class="surprise-message">
+            Dear Mom and Dad,<br><br>
+            Your love for each other is the reason our family feels so warm and complete.<br>
+            Thank you for teaching me what true love, patience, and commitment look like.<br>
+            I am forever grateful to be your child.<br>
+            Happy Wedding Anniversary to the most wonderful parents. ❤️
+        </p>
+        
+        <p class="surprise-signature">
+            With final bye 👋
+        </p>
+
+    </main>
+
+    <script src="script.js?v=2"></script>
+    <script>
+        function revealSurprise() {
+            const mysteryBox = document.getElementById('mystery-box');
+            const surpriseBox = document.getElementById('final-surprise');
+            
+            // Fade out button
+            mysteryBox.style.opacity = '0';
+            
+            setTimeout(() => {
+                mysteryBox.style.display = 'none';
+                
+                // Show surprise content
+                surpriseBox.style.display = 'block';
+                // Trigger reflow
+                void surpriseBox.offsetWidth;
+                surpriseBox.style.opacity = '1';
+                surpriseBox.style.animation = 'fadeInNav 1.5s forwards ease-out';
+            }, 800);
+        }
+
+        // Make the hearts/sparkles slower and more elegant on this page
+        const items = ['🌸', '💖', '✨', '🤍', '🌺'];
+        const container = document.getElementById('animation-container');
+        
+        setInterval(() => {
+            const el = document.createElement('div');
+            el.classList.add('floating-item');
+            el.innerText = items[Math.floor(Math.random() * items.length)];
+            el.style.left = Math.random() * 100 + 'vw';
+            el.style.fontSize = (Math.random() * 1.5 + 0.5) + 'rem';
+            el.style.animationDuration = (Math.random() * 15 + 10) + 's';
+            
+            container.appendChild(el);
+            setTimeout(() => el.remove(), 25000);
+        }, 800);
+    </script>
+</body>
+</html>

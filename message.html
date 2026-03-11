@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Message From the Heart</title>
+    <!-- Import Elegant Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Extra Font for the handwritten letter style -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body class="message-page">
+
+    <!-- Container for floating hearts/sparkles -->
+    <div id="animation-container"></div>
+
+    <main class="message-container">
+        
+        <header class="message-header">
+            <h1 class="message-heading">A Message From the Heart</h1>
+        </header>
+
+        <section class="letter-card">
+            <!-- Decorative borders/icons -->
+            <div class="letter-decoration top-left">❤️</div>
+            <div class="letter-decoration top-right">❤️</div>
+            <div class="letter-decoration bottom-left">❤️</div>
+            <div class="letter-decoration bottom-right">❤️</div>
+            
+            <div class="letter-content" id="typed-letter">
+                <!-- Content will be injected by JS for typing effect -->
+            </div>
+            
+            <div class="letter-content hidden-content" id="original-letter">
+                <p>Dear Mom and Dad,</p>
+                <p>Watching the love and respect you have for each other has always inspired me. Through every happy moment and every challenge, you both have stood by each other with strength and patience.</p>
+                <p>Thank you for creating such a loving home and for teaching me what true love and commitment look like. I feel so lucky and proud to be your child.</p>
+                <p>Wishing you many more years of happiness, laughter, and togetherness.</p>
+                <p class="signature">With all my love.</p>
+            </div>
+        </section>
+
+        <!-- Navigation to final surprise on the same page -->
+        <div class="message-nav">
+             <button class="message-btn" onclick="revealSurprise()">
+                <span class="btn-text">Click for final Page</span>
+                <span class="btn-icon">✨</span>
+            </button>
+        </div>
+
+    </main>
+
+    <!-- The Hidden Final Surprise -->
+    <main class="surprise-content" id="final-surprise" style="display: none; padding-bottom: 5rem;">
+        
+        <h1 class="surprise-heading">To Forever and Always</h1>
+        
+        <!-- Large Marriage Photo with floating emotional appearance -->
+        <div class="marriage-photo-container">
+            <img src="https://images.unsplash.com/photo-1534062409054-c918ee9111b1?auto=format&fit=crop&q=80&w=800" alt="Beautiful Marriage Moment">
+        </div>
+        
+        <p class="surprise-message">
+            Dear Mom and Dad,<br><br>
+            Your love for each other is the reason our family feels so warm and complete.<br>
+            Thank you for teaching me what true love, patience, and commitment look like.<br>
+            I am forever grateful to be your child.<br>
+            Happy Wedding Anniversary to the most wonderful parents. ❤️
+        </p>
+        
+        <p class="surprise-signature" style="font-family: 'Dancing Script', cursive;">
+            With final bye 👋
+        </p>
+
+    </main>
+
+    <!-- Reuse script for background animation and add typing logic -->
+    <script src="script.js?v=3"></script>
+    <script>
+        // Trigger typing effect specifically on this page after load
+        window.addEventListener('load', () => {
+            if (typeof startTypingEffect === 'function') {
+                setTimeout(startTypingEffect, 1000); // 1s delay for fade-in effect to show
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Memories Together</title>
+    <!-- Import Elegant Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="gallery-page">
+
+    <!-- Container for subtle floating hearts/sparkles -->
+    <div id="animation-container"></div>
+
+    <header class="gallery-header">
+        <h1 class="gallery-heading">Beautiful Memories Together</h1>
+        <p class="gallery-subheading">"Every picture holds a story, every moment holds love."</p>
+    </header>
+
+    <main class="gallery-container">
+        <!-- Photo Grid -->
+        <div class="photo-grid">
+            
+            <!-- Polaroid Item 1 -->
+            <div class="polaroid" onclick="openLightbox(this)">
+                <div class="polaroid-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=800" alt="Wedding Ring">
+                </div>
+                <p class="caption">The beginning of a beautiful journey</p>
+            </div>
+
+            <!-- Polaroid Item 2 -->
+            <div class="polaroid" onclick="openLightbox(this)">
+                <div class="polaroid-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1542042161784-26ab9e041e89?auto=format&fit=crop&q=80&w=800" alt="Happy Couple">
+                </div>
+                <p class="caption">Smiles that built our home</p>
+            </div>
+
+            <!-- Polaroid Item 3 -->
+            <div class="polaroid" onclick="openLightbox(this)">
+                <div class="polaroid-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?auto=format&fit=crop&q=80&w=800" alt="Couple laughing">
+                </div>
+                <p class="caption">Moments filled with love and laughter</p>
+            </div>
+
+            <!-- Polaroid Item 4 -->
+            <div class="polaroid" onclick="openLightbox(this)">
+                <div class="polaroid-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1507502707541-f369a3b18502?auto=format&fit=crop&q=80&w=800" alt="Family Vacation">
+                </div>
+                <p class="caption">Family trips and happy memories</p>
+            </div>
+
+            <!-- Polaroid Item 5 -->
+            <div class="polaroid" onclick="openLightbox(this)">
+                <div class="polaroid-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800" alt="Holding hands">
+                </div>
+                <p class="caption">The love that created our family</p>
+            </div>
+            
+            <!-- Polaroid Item 6 -->
+            <div class="polaroid" onclick="openLightbox(this)">
+                <div class="polaroid-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&q=80&w=800" alt="Sunset walk">
+                </div>
+                <p class="caption">Walking together forever</p>
+            </div>
+
+        </div>
+        
+        <!-- Navigation to next page -->
+        <div class="gallery-nav">
+             <button class="nav-btn gallery-btn" onclick="goToMessage()">
+                <span class="btn-text">Read a Special Message</span>
+                <span class="btn-icon">💌</span>
+            </button>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <!-- We reuse the script for background animations and append new features -->
+    <script src="script.js"></script>
+</body>
+</html>

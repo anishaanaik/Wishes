@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary Celebration</title>
+    <!-- Import Elegant Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Canvas Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body class="celebration-page">
+
+    <!-- Container for floating hearts/petals animation -->
+    <div id="animation-container"></div>
+    <!-- Fireworks Container -->
+    <canvas id="fireworks-canvas"></canvas>
+
+    <main class="celebration-container">
+        <div class="celebration-box">
+            
+            <h1 class="celebration-heading typing-effect">Happy Wedding Anniversary Mom & Dad!</h1>
+            
+            <p class="celebration-message">
+                Your love, patience, and support for each other make our family beautiful. Today we celebrate the wonderful journey you both share.
+            </p>
+            
+            <div class="cake-section">
+                <!-- SVG Cake Illustration -->
+                <div class="cake-illustration">
+                    <svg viewBox="0 0 200 200" width="150" height="150">
+                        <!-- Cake Base -->
+                        <path d="M 40,150 C 40,165 160,165 160,150 L 160,110 C 160,95 40,95 40,110 Z" fill="#fcd5ce" />
+                        <!-- Cake Middle -->
+                        <path d="M 55,110 C 55,120 145,120 145,110 L 145,75 C 145,65 55,65 55,75 Z" fill="#faedcd" />
+                        <!-- Cake Top -->
+                        <path d="M 70,75 C 70,82 130,82 130,75 L 130,50 C 130,43 70,43 70,50 Z" fill="#fdfcdc" />
+                        
+                        <!-- Drip Frosting Top -->
+                        <path d="M 70,50 C 70,43 130,43 130,50 C 130,55 125,60 120,55 C 115,50 110,65 105,55 C 100,45 95,60 90,55 C 85,50 80,60 75,55 C 70,50 70,50 70,50 Z" fill="#e5989b" />
+                        <!-- Drip Frosting Middle -->
+                        <path d="M 55,75 C 55,65 145,65 145,75 C 145,80 135,85 125,75 C 115,65 105,85 95,75 C 85,65 80,80 75,75 C 70,70 65,85 55,75 Z" fill="#d4a373" />
+                         <!-- Drip Frosting Base -->
+                        <path d="M 40,110 C 40,95 160,95 160,110 C 160,115 145,125 130,110 C 115,95 100,120 85,110 C 70,100 60,120 50,110 C 45,105 40,110 40,110 Z" fill="#e5989b" />
+
+                        <!-- Candles -->
+                        <rect x="95" y="25" width="10" height="25" fill="#fff" rx="2" />
+                        <path d="M 95,30 L 105,35 L 95,40" fill="#e5989b" />
+                        <!-- Flame -->
+                        <path id="flame" d="M 100,20 C 95,20 95,10 100,5 C 105,10 105,20 100,20 Z" fill="#ffb703" />
+                    </svg>
+                </div>
+                
+                <button class="celebrate-btn" onclick="celebrateLove()">
+                    <span class="btn-text">Celebrate the Love</span>
+                    <span class="btn-icon">🎉</span>
+                </button>
+            </div>
+        </div>
+
+        <nav class="bottom-nav">
+             <button class="nav-btn" onclick="goToGallery()">
+                <span class="btn-text">See Our Beautiful Memories</span>
+                <span class="btn-icon">📸</span>
+            </button>
+        </nav>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
