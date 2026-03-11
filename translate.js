@@ -15,12 +15,12 @@ const LANG_STORAGE_KEY = 'anniversary_lang';
 // Translations for elements that contain embedded HTML (e.g. <br> tags)
 const HTML_TRANSLATIONS = {
     '.surprise-message': {
-        en: `Dear Mom and Dad,<br><br>
+        en: `Dear Mummy and Pappa,<br><br>
             Your love for each other is the reason our family feels so warm and complete.<br>
             Thank you for teaching me what true love, patience, and commitment look like.<br>
             I am forever grateful to be your child.<br>
             Happy Wedding Anniversary to the most wonderful parents. ❤️`,
-        kn: `ಪ್ರಿಯ ಅಮ್ಮ ಮತ್ತು ಅಪ್ಪ,<br><br>
+        kn: `ಪ್ರಿಯ Mummy ಮತ್ತು Pappa,<br><br>
             ನಿಮ್ಮ ನಡುವಿನ ಪ್ರೀತಿಯೇ ನಮ್ಮ ಕುಟುಂಬ ಇಷ್ಟು ಬೆಚ್ಚಗಿರುವ ಮತ್ತು ಪರಿಪೂರ್ಣವಾಗಿರುವ ಕಾರಣ.<br>
             ನಿಜವಾದ ಪ್ರೀತಿ, ತಾಳ್ಮೆ ಮತ್ತು ಬದ್ಧತೆ ಹೇಗಿರುತ್ತದೆ ಎಂದು ತೋರಿಸಿದ್ದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು.<br>
             ನಿಮ್ಮ ಮಗಳಾಗಿರಲು ನಾನು ಎಂದಿಗೂ ಕೃತಜ್ಞಳಾಗಿರುತ್ತೇನೆ.<br>
