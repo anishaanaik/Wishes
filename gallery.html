@@ -16,8 +16,12 @@
     <div id="animation-container"></div>
 
     <header class="gallery-header">
-        <h1 class="gallery-heading">Beautiful Memories Together</h1>
-        <p class="gallery-subheading">"Every picture holds a story, every moment holds love."</p>
+        <h1 class="gallery-heading"
+            data-en="Beautiful Memories Together"
+            data-kn="ಒಟ್ಟಿಗೆ ಸುಂದರ ನೆನಪುಗಳು">Beautiful Memories Together</h1>
+        <p class="gallery-subheading"
+           data-en="&quot;Every picture holds a story, every moment holds love.&quot;"
+           data-kn="&quot;ಪ್ರತಿ ಚಿತ್ರವೂ ಒಂದು ಕಥೆಯನ್ನು ಹೊಂದಿದೆ, ಪ್ರತಿ ಕ್ಷಣವೂ ಪ್ರೀತಿಯನ್ನು ಹೊಂದಿದೆ.&quot;">"Every picture holds a story, every moment holds love."</p>
     </header>
 
     <main class="gallery-container">
@@ -29,7 +33,7 @@
                 <div class="polaroid-img-wrapper">
                     <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=800" alt="Wedding Ring">
                 </div>
-                <p class="caption">The beginning of a beautiful journey</p>
+                <p class="caption" data-en="The beginning of a beautiful journey" data-kn="ಒಂದು ಸುಂದರ ಯಾತ್ರೆಯ ಆರಂಭ">The beginning of a beautiful journey</p>
             </div>
 
             <!-- Polaroid Item 2 -->
@@ -37,7 +41,7 @@
                 <div class="polaroid-img-wrapper">
                     <img src="https://images.unsplash.com/photo-1542042161784-26ab9e041e89?auto=format&fit=crop&q=80&w=800" alt="Happy Couple">
                 </div>
-                <p class="caption">Smiles that built our home</p>
+                <p class="caption" data-en="Smiles that built our home" data-kn="ನಮ್ಮ ಮನೆಯನ್ನು ಕಟ್ಟಿದ ನಗುಗಳು">Smiles that built our home</p>
             </div>
 
             <!-- Polaroid Item 3 -->
@@ -45,7 +49,7 @@
                 <div class="polaroid-img-wrapper">
                     <img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?auto=format&fit=crop&q=80&w=800" alt="Couple laughing">
                 </div>
-                <p class="caption">Moments filled with love and laughter</p>
+                <p class="caption" data-en="Moments filled with love and laughter" data-kn="ಪ್ರೀತಿ ಮತ್ತು ನಗುವಿನಿಂದ ತುಂಬಿದ ಕ್ಷಣಗಳು">Moments filled with love and laughter</p>
             </div>
 
             <!-- Polaroid Item 4 -->
@@ -53,7 +57,7 @@
                 <div class="polaroid-img-wrapper">
                     <img src="https://images.unsplash.com/photo-1507502707541-f369a3b18502?auto=format&fit=crop&q=80&w=800" alt="Family Vacation">
                 </div>
-                <p class="caption">Family trips and happy memories</p>
+                <p class="caption" data-en="Family trips and happy memories" data-kn="ಕುಟುಂಬ ಪ್ರವಾಸಗಳು ಮತ್ತು ಸಂತೋಷದ ನೆನಪುಗಳು">Family trips and happy memories</p>
             </div>
 
             <!-- Polaroid Item 5 -->
@@ -61,7 +65,7 @@
                 <div class="polaroid-img-wrapper">
                     <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800" alt="Holding hands">
                 </div>
-                <p class="caption">The love that created our family</p>
+                <p class="caption" data-en="The love that created our family" data-kn="ನಮ್ಮ ಕುಟುಂಬವನ್ನು ಸೃಷ್ಟಿಸಿದ ಪ್ರೀತಿ">The love that created our family</p>
             </div>
             
             <!-- Polaroid Item 6 -->
@@ -69,7 +73,7 @@
                 <div class="polaroid-img-wrapper">
                     <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&q=80&w=800" alt="Sunset walk">
                 </div>
-                <p class="caption">Walking together forever</p>
+                <p class="caption" data-en="Walking together forever" data-kn="ಎಂದೆಂದಿಗೂ ಒಟ್ಟಿಗೆ ನಡೆಯುತ್ತಾ">Walking together forever</p>
             </div>
 
         </div>
@@ -77,7 +81,7 @@
         <!-- Navigation to next page -->
         <div class="gallery-nav">
              <button class="nav-btn gallery-btn" onclick="goToMessage()">
-                <span class="btn-text">Read a Special Message</span>
+                <span class="btn-text" data-en="Read a Special Message" data-kn="ವಿಶೇಷ ಸಂದೇಶ ಓದಿ">Read a Special Message</span>
                 <span class="btn-icon">💌</span>
             </button>
         </div>
@@ -91,6 +95,7 @@
     </div>
 
     <!-- We reuse the script for background animations and append new features -->
+    <script src="translate.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -17,14 +17,16 @@
 
     <main class="mystery-container" id="mystery-box">
         <button class="mystery-btn" onclick="revealSurprise()">
-            <span class="btn-text">Click for final surprise</span>
+            <span class="btn-text" data-en="Click for final surprise" data-kn="ಅಂತಿಮ ಆಶ್ಚರ್ಯಕ್ಕಾಗಿ ಕ್ಲಿಕ್ ಮಾಡಿ">Click for final surprise</span>
             <span class="btn-icon">🎁</span>
         </button>
     </main>
 
     <main class="surprise-content" id="final-surprise">
         
-        <h1 class="surprise-heading">To Forever and Always</h1>
+        <h1 class="surprise-heading"
+            data-en="To Forever and Always"
+            data-kn="ಯಾವಾಗಲೂ ಮತ್ತು ಎಂದೆಂದಿಗೂ">To Forever and Always</h1>
         
         <!-- Large Marriage Photo with floating emotional appearance -->
         <div class="marriage-photo-container">
@@ -40,12 +42,15 @@
             Happy Wedding Anniversary to the most wonderful parents. ❤️
         </p>
         
-        <p class="surprise-signature">
+        <p class="surprise-signature"
+           data-en="With final bye 👋"
+           data-kn="ಅಂತಿಮ ವಿದಾಯದೊಂದಿಗೆ 👋">
             With final bye 👋
         </p>
 
     </main>
 
+    <script src="translate.js"></script>
     <script src="script.js?v=2"></script>
     <script>
         function revealSurprise() {

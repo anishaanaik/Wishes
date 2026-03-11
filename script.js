@@ -149,7 +149,8 @@ function startTypingEffect() {
         }
         
         const currentPara = paragraphs[currentParaIndex];
-        const text = currentPara.innerHTML;
+        const lang = (typeof getCurrentLang === 'function') ? getCurrentLang() : 'en';
+        const text = (lang === 'kn' && currentPara.dataset.kn) ? currentPara.dataset.kn : currentPara.innerHTML;
         const className = currentPara.className;
         
         // Create new element in typed container
