@@ -206,7 +206,7 @@ function revealSurprise() {
         if(navBtn) navBtn.style.display = 'none';
         
         // Change background color slightly to fit surprise mood better (optional)
-        document.body.style.background = 'linear-gradient(135deg, #fdfcdc 0%, #faedcd 50%, #fcd5ce 100%)';
+        document.body.style.background = '#ffffff';
         
         if(surpriseBox) {
             surpriseBox.style.display = 'block';
