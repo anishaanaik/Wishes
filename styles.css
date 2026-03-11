@@ -62,7 +62,7 @@ body, html {
 
 .sub-heading {
     font-family: var(--font-body);
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: 500;
     color: #8a6c71;
     margin-bottom: 2rem;
@@ -93,7 +93,7 @@ body, html {
     font-family: var(--font-heading);
     font-size: 1.25rem;
     line-height: 1.6;
-    color: var(--text-dark);
+    color: #8a6c71;
     font-style: italic;
     margin-bottom: 3rem;
 }
