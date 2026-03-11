@@ -40,8 +40,10 @@ body, html {
     border-radius: 20px;
     text-align: center;
     max-width: 650px;
+    width: 90%;
     box-shadow: 0 15px 35px rgba(229, 152, 155, 0.2);
     animation: fadeIn 2s ease-out;
+    box-sizing: border-box;
 }
 
 .main-heading {
@@ -186,26 +188,56 @@ body, html {
     }
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+/* Responsive — Welcome Page */
+@media (max-width: 768px) {
     .content-box {
-        padding: 2rem 1.5rem;
-        margin: 1.5rem;
+        padding: 2rem 2rem;
+        margin: 1rem auto;
     }
     .main-heading {
-        font-size: 2.2rem;
-    }
-    .sub-heading {
-        font-size: 1rem;
-    }
-    .name {
-        font-size: 2.5rem;
-    }
-    .heart-icon {
         font-size: 2rem;
     }
+}
+
+@media (max-width: 480px) {
+    .welcome-container {
+        align-items: flex-start;
+        padding-top: 2rem;
+        min-height: 100dvh;
+    }
+    .content-box {
+        padding: 1.5rem 1.2rem;
+        margin: 1rem;
+        border-radius: 16px;
+        width: calc(100% - 2rem);
+    }
+    .main-heading {
+        font-size: 1.6rem;
+        margin-bottom: 0.4rem;
+    }
+    .sub-heading {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    .names-section {
+        gap: 0.8rem;
+        margin: 1.2rem 0;
+    }
+    .name {
+        font-size: 2.2rem;
+    }
+    .heart-icon {
+        font-size: 1.8rem;
+    }
     .message {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .start-btn {
+        padding: 0.9rem 1.8rem;
+        font-size: 1rem;
+        width: 100%;
+        justify-content: center;
     }
 }
 
@@ -386,20 +418,51 @@ body, html {
 }
 
 /* Mobile Adjustments for Celebration */
-@media (max-width: 600px) {
-    .celebration-box {
-        padding: 2rem 1.5rem;
-        margin-bottom: 2rem;
+@media (max-width: 768px) {
+    .celebration-container {
+        padding: 1.5rem;
     }
     .celebration-heading {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
     .celebration-message {
         font-size: 1.1rem;
     }
+}
+
+@media (max-width: 480px) {
+    .celebration-box {
+        padding: 1.5rem 1rem;
+        margin-bottom: 1.5rem;
+        border-radius: 18px;
+    }
+    .celebration-heading {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    .celebration-message {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
     .cake-illustration svg {
-        width: 120px;
-        height: 120px;
+        width: 110px;
+        height: 110px;
+    }
+    .celebrate-btn {
+        padding: 0.85rem 1.5rem;
+        font-size: 1rem;
+        width: 100%;
+        justify-content: center;
+    }
+    .bottom-nav {
+        padding: 0 1rem;
+    }
+    .nav-btn {
+        width: 100%;
+        justify-content: center;
+        font-size: 0.95rem;
+        padding: 0.9rem 1rem;
     }
 }
 
@@ -612,14 +675,61 @@ body, html {
 /* Gallery Mobile Adjustments */
 @media (max-width: 768px) {
     .gallery-heading {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
     .gallery-subheading {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+    }
+    .gallery-container {
+        padding: 1rem 4%;
     }
     .photo-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
         gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-header {
+        padding: 1.5rem 1rem 0.5rem;
+    }
+    .gallery-heading {
+        font-size: 1.7rem;
+    }
+    .gallery-subheading {
+        font-size: 1.2rem;
+    }
+    .gallery-container {
+        padding: 0.5rem 1rem;
+    }
+    .photo-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8rem;
+    }
+    .polaroid {
+        padding: 0.6rem;
+    }
+    .polaroid .caption {
+        font-size: 0.8rem;
+        margin-top: 0.4rem;
+    }
+    .gallery-nav {
+        margin: 2rem 0 1rem;
+    }
+    .gallery-btn {
+        width: 100%;
+        justify-content: center;
+        font-size: 0.95rem;
+        padding: 0.9rem 1rem;
+    }
+    .close-lightbox {
+        top: 15px;
+        right: 15px;
+        font-size: 30px;
+    }
+    #lightbox-caption {
+        font-size: 0.95rem;
+        padding: 10px 0;
     }
 }
 
@@ -719,16 +829,59 @@ body, html {
 }
 
 /* Message Mobile Adjustments */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .message-page {
+        padding: 1rem;
+        align-items: flex-start;
+        padding-top: 1.5rem;
+    }
     .message-heading {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+    }
+    .message-header {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .message-page {
+        padding: 0.8rem;
+        min-height: 100dvh;
+    }
+    .message-heading {
+        font-size: 1.7rem;
+    }
+    .message-header {
+        margin-bottom: 1rem;
     }
     .letter-card {
-        padding: 3rem 1.5rem;
+        padding: 2rem 1rem;
+        border-radius: 10px;
     }
+    .letter-decoration {
+        font-size: 1rem;
+    }
+    .top-left, .bottom-left { left: 0.8rem; }
+    .top-right, .bottom-right { right: 0.8rem; }
+    .top-left, .top-right { top: 0.8rem; }
+    .bottom-left, .bottom-right { bottom: 0.8rem; }
     .letter-content {
-        font-size: 1.4rem;
-        line-height: 1.8;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        min-height: auto;
+    }
+    .letter-content .signature {
+        font-size: 1.6rem;
+        margin-top: 1.5rem;
+    }
+    .message-nav {
+        margin-top: 1.5rem;
+    }
+    .message-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
     }
 }
 
@@ -836,8 +989,8 @@ body, html {
 .marriage-photo-container {
     position: relative;
     margin: 0 auto 3rem;
-    width: 350px;
-    height: 450px;
+    width: min(350px, 80vw);
+    height: min(450px, 60vw);
     border: 15px solid #fff;
     box-shadow: 0 15px 35px rgba(229, 152, 155, 0.4);
     border-radius: 4px; /* Classic polaroid corner */
@@ -891,12 +1044,55 @@ body, html {
     animation: fadeInText 2s 3.5s forwards ease-in;
 }
 
-@media (max-width: 600px) {
-    .surprise-heading { font-size: 3.5rem; }
-    .marriage-photo-container {
-        width: 280px;
-        height: 380px;
-        border-width: 10px;
+/* Surprise / Final Page Mobile */
+@media (max-width: 768px) {
+    .surprise-page {
+        padding: 1.5rem;
     }
-    .surprise-message { font-size: 1.3rem; }
+    .surprise-heading {
+        font-size: 2.5rem;
+    }
+    .mystery-btn {
+        padding: 1.2rem 2.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .surprise-page {
+        padding: 1rem;
+        min-height: 100dvh;
+        justify-content: flex-start;
+        padding-top: 2rem;
+    }
+    .surprise-heading {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    .mystery-btn {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        width: 100%;
+        max-width: 300px;
+    }
+    .marriage-photo-container {
+        width: min(280px, 85vw);
+        height: min(360px, 65vw);
+        border-width: 8px;
+        margin-bottom: 1.5rem;
+    }
+    .surprise-message {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+    .surprise-signature {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .surprise-content {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 0.5rem;
+    }
 }
